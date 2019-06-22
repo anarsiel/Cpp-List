@@ -222,6 +222,8 @@ TEST(correctness, push_back)
     expect_eq(c, {1, 2, 3, 4});
 }
 
+//blagoi
+
 TEST(correctness, copy_ctor)
 {
     counted::no_new_instances_guard g;
@@ -486,6 +488,7 @@ TEST(correctness, erase_middle)
 
     container c;
     mass_push_back(c, {1, 2, 3, 4});
+
     c.erase(std::next(c.begin(), 2));
     expect_eq(c, {1, 2, 4});
 }
@@ -648,6 +651,7 @@ TEST(correctness, splice_middle_middle)
     mass_push_back(c1, {1, 2, 3, 4});
     mass_push_back(c2, {5, 6, 7, 8});
     c1.splice(std::next(c1.begin(), 2), c2, std::next(c2.begin()), std::next(c2.begin(), 3));
+
     expect_eq(c1, {1, 2, 6, 7, 3, 4});
     expect_eq(c2, {5, 8});
 }
@@ -834,6 +838,17 @@ TEST(correctness, swap)
     mass_push_back(c1, {1, 2, 3, 4});
     mass_push_back(c2, {5, 6, 7, 8});
     swap(c1, c2);
+
+    for (auto it = c1.begin(); it != c1.end(); it++) {
+        std::cout << *it << ' ';
+    }
+    std::cout << '\n';
+
+    for (auto it = c2.begin(); it != c2.end(); it++) {
+        std::cout << *it << ' ';
+    }
+    std::cout << '\n';
+
     expect_eq(c1, {5, 6, 7, 8});
     expect_eq(c2, {1, 2, 3, 4});
 }
@@ -889,11 +904,11 @@ TEST(correctness, clear_empty)
     c.clear();
     EXPECT_TRUE(c.empty());
 }
-    
+
 TEST(correctness, clear)
 {
     counted::no_new_instances_guard g;
-    
+
     container c;
     mass_push_back(c, {1, 2, 3, 4});
     c.clear();
@@ -907,7 +922,7 @@ TEST(fault_injection, push_back)
 {
     faulty_run([] {
         counted::no_new_instances_guard g;
-    
+
         container c;
         mass_push_back(c, {1, 2, 3, 4});
     });
@@ -917,7 +932,7 @@ TEST(fault_injection, assignment_operator)
 {
     faulty_run([] {
         counted::no_new_instances_guard g;
-    
+
         container c;
         mass_push_back(c, {1, 2, 3, 4});
         container c2;
@@ -926,6 +941,7 @@ TEST(fault_injection, assignment_operator)
         expect_eq(c2, {1, 2, 3, 4});
     });
 }
+
 /*TEST(invalid, pop_front_empty) {
     EXPECT_EXIT(
     {

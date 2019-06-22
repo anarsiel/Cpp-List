@@ -7,7 +7,10 @@ set(LINK_FLAGS "-pthread ${LINK_FLAGS}")
 include_directories(.)
 add_subdirectory(gtest)
 
-add_library(counted counted.h counted.cpp fault_injection.h fault_injection.cpp)
+add_library(counted
+        counted.h counted.cpp fault_injection.h fault_injection.cpp
+#        main.cpp
+        list.h)
 
 add_executable(std std.cpp)
 target_link_libraries(std counted gtest)

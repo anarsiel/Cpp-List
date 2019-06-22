@@ -1,0 +1,7 @@
+/home/blagoi/Documents/year2018-list-testing/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/blagoi/Documents/year2018-list-testing/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/blagoi/Documents/year2018-list-testing/cmake-build-debug/CMakeFiles/counted.dir
+/home/blagoi/Documents/year2018-list-testing/cmake-build-debug/CMakeFiles/std.dir
+/home/blagoi/Documents/year2018-list-testing/cmake-build-debug/gtest/CMakeFiles/rebuild_cache.dir
+/home/blagoi/Documents/year2018-list-testing/cmake-build-debug/gtest/CMakeFiles/gtest.dir
+/home/blagoi/Documents/year2018-list-testing/cmake-build-debug/gtest/CMakeFiles/edit_cache.dir
