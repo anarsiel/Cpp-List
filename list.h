@@ -111,7 +111,7 @@ public:
         _front_pointer->_prev = _fake_node;
     }
 
-    void pop_back() {
+    void pop_back() noexcept {
         if (contains_only_one()) {
             node *tmp = static_cast<node*>(_front_pointer);
 
@@ -129,7 +129,7 @@ public:
         }
     }
 
-    void pop_front() {
+    void pop_front() noexcept {
         if (contains_only_one()) {
             pop_back();
         } else {
@@ -308,7 +308,7 @@ public:
         return iterator(_new_node);
     }
 
-    iterator erase(iterator const &it) {
+    iterator erase(iterator const &it) noexcept {
         if (it == begin()) {
             pop_front();
             return iterator(++begin());
@@ -376,7 +376,7 @@ public:
         }
     }
 
-    friend void swap(list &a, list &b) {
+    friend void swap(list &a, list &b) noexcept {
         if (a.empty() && b.empty()) {
             return;
         } else if (a.empty() && !b.empty()) {
