@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Project" targetName="gtest" />
       <config projectName="Project" targetName="counted" />
+      <config projectName="Project" targetName="gtest" />
       <config projectName="Project" targetName="std" />
     </generated>
   </component>
@@ -14,8 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3a1d70a-e526-4f52-b603-5285e65e7900" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/std.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/std.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list.h" beforeDir="false" afterPath="$PROJECT_DIR$/list.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests.inl" beforeDir="false" afterPath="$PROJECT_DIR$/tests.inl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -30,30 +30,24 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/list.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="432" selection-start-line="432" selection-end-line="432" />
+            <state relative-caret-position="522">
+              <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
               <folding>
                 <element signature="e#93#105#0" expanded="true" />
-                <element signature="e#2738#2750#0" expanded="true" />
-                <element signature="e#2943#2955#0" expanded="true" />
-                <element signature="e#3024#3036#0" expanded="true" />
-                <element signature="e#3132#3144#0" expanded="true" />
-                <element signature="e#3277#3289#0" expanded="true" />
-                <element signature="e#4415#4439#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests.inl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="943" selection-start-line="930" selection-end-line="943" />
+            <state relative-caret-position="267">
+              <caret line="917" selection-start-line="917" selection-end-line="917" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
                 <element signature="e#65#77#0" expanded="true" />
@@ -65,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fault_injection.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="139" selection-start-line="139" selection-end-line="139" />
+            <state relative-caret-position="180">
+              <caret line="136" column="18" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -84,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/counted.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="529">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
             </state>
           </provider>
         </entry>
@@ -92,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gtest/gtest-all.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
+            <state relative-caret-position="110577">
               <caret line="3813" selection-start-line="3813" selection-end-line="3813" />
             </state>
           </provider>
@@ -150,6 +144,8 @@
       <find>const_itera</find>
       <find>SWA</find>
       <find>if (empty())</find>
+      <find>fault</find>
+      <find>fault_in</find>
     </findStrings>
     <replaceStrings>
       <replace>prev</replace>
@@ -170,8 +166,8 @@
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/std.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/list.h" />
         <option value="$PROJECT_DIR$/tests.inl" />
+        <option value="$PROJECT_DIR$/list.h" />
       </list>
     </option>
   </component>
@@ -200,6 +196,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,10 +208,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -266,7 +263,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561211559649</updated>
-      <workItem from="1561211560750" duration="16865000" />
+      <workItem from="1561211560750" duration="17412000" />
+      <workItem from="1561275919574" duration="363000" />
     </task>
     <servers />
   </component>
@@ -303,17 +301,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16865000" />
+    <option name="totallyTimeSpent" value="17775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="134" y="35" width="2746" height="1765" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24981189" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2535741" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32955304" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32911393" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.32955304" />
@@ -361,13 +359,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/tests.inl</url>
-          <line>62</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/tests.inl</url>
-          <line>68</line>
-          <option name="timeStamp" value="35" />
+          <line>917</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -400,6 +393,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gtest/gtest-all.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110577">
+          <caret line="3813" selection-start-line="3813" selection-end-line="3813" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -413,28 +420,7 @@
     <entry file="file://$PROJECT_DIR$/counted.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fault_injection.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="139" selection-start-line="139" selection-end-line="139" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gtest/gtest-all.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="3813" selection-start-line="3813" selection-end-line="3813" />
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
         </state>
       </provider>
     </entry>
@@ -445,29 +431,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/list.h">
+    <entry file="file://$PROJECT_DIR$/fault_injection.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="432" selection-start-line="432" selection-end-line="432" />
-          <folding>
-            <element signature="e#93#105#0" expanded="true" />
-            <element signature="e#2738#2750#0" expanded="true" />
-            <element signature="e#2943#2955#0" expanded="true" />
-            <element signature="e#3024#3036#0" expanded="true" />
-            <element signature="e#3132#3144#0" expanded="true" />
-            <element signature="e#3277#3289#0" expanded="true" />
-            <element signature="e#4415#4439#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="136" column="18" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests.inl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="943" selection-start-line="930" selection-end-line="943" />
+        <state relative-caret-position="267">
+          <caret line="917" selection-start-line="917" selection-end-line="917" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
             <element signature="e#65#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/list.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+          <folding>
+            <element signature="e#93#105#0" expanded="true" />
           </folding>
         </state>
       </provider>

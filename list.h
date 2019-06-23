@@ -30,13 +30,6 @@ private:
     };
 
 public:
-    list() {
-        _fake_node = new base_node();
-        _fake_node->_prev = _fake_node;
-        _fake_node->_next = _fake_node;
-
-        _front_pointer = static_cast<node*>(_fake_node);
-    }
 
     list(list const &other) {
         _fake_node = new base_node();
@@ -45,8 +38,15 @@ public:
 
         _front_pointer = static_cast<node*>(_fake_node);
 
-        for (auto it = other.begin(); it != other.end(); ++it)
-            push_back(*it);
+        for (auto it = other.begin(); it != other.end(); ++it) {
+            try {
+                push_back(*it);
+            } catch (...) {
+                clear();
+                delete(_fake_node);
+                throw;
+            }
+        }
     }
 
     ~list() {
@@ -59,11 +59,12 @@ public:
             return *this;
         }
 
-        clear();
+        list tmp;
 
         for (auto it = other.begin(); it != other.end(); ++it)
-            push_back(*it);
+            tmp.push_back(*it);
 
+        swap(*this, tmp);
         return *this;
     }
 
@@ -97,8 +98,6 @@ public:
     }
 
     void push_front(T const &element) {
-//        T& copy_elem = new T(element);
-
         if (empty()) {
             push_back(element);
             return;
@@ -259,6 +258,14 @@ public:
 
     const_iterator end() const {
         return const_iterator(_fake_node);
+    }
+
+    list() {
+        _fake_node = new base_node();
+        _fake_node->_prev = _fake_node;
+        _fake_node->_next = _fake_node;
+
+        _front_pointer = static_cast<node*>(_fake_node);
     }
 
     reverse_iterator rbegin() {
